@@ -49,14 +49,15 @@ export default function HeroSection(): JSX.Element {
             Economize tempo e garanta o melhor cuidado para seu carro
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-12">
+          {/* Benefícios em grid para mobile */}
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-4 mb-12">
             {benefitIcons.map((benefit, index) => (
               <div 
                 key={index}
-                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full"
+                className="flex flex-col sm:flex-row items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-full"
               >
-                <span className="text-2xl">{benefit.icon}</span>
-                <span className="text-sm md:text-base">{benefit.text}</span>
+                <span className="text-2xl mb-1 sm:mb-0">{benefit.icon}</span>
+                <span className="text-sm text-center sm:text-left">{benefit.text}</span>
               </div>
             ))}
           </div>
