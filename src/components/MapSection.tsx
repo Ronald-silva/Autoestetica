@@ -4,20 +4,16 @@ import React from 'react'
 
 const coverageAreas = [
   {
-    city: 'Fortaleza',
-    neighborhoods: ['Aldeota', 'Meireles', 'Cocó', 'Guararapes', 'Edson Queiroz']
+    city: 'Fortaleza'
   },
   {
-    city: 'Eusébio',
-    neighborhoods: ['Alphaville', 'Centro', 'Precabura']
+    city: 'Eusébio'
   },
   {
-    city: 'Aquiraz',
-    neighborhoods: ['Porto das Dunas', 'Prainha', 'Centro']
+    city: 'Aquiraz'
   },
   {
-    city: 'Maracanaú',
-    neighborhoods: ['Centro', 'Jereissati', 'Pajuçara']
+    city: 'Maracanaú'
   }
 ]
 
@@ -59,28 +55,21 @@ export default function MapSection(): JSX.Element {
               <h3 className="text-xl font-bold mb-6">
                 Regiões Atendidas
               </h3>
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {coverageAreas.map((area, index) => (
-                  <div key={index}>
-                    <div className="flex items-center gap-2 mb-2">
-                      <svg
-                        className="w-5 h-5 text-red-600 flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <h4 className="font-semibold">{area.city}</h4>
-                    </div>
-                    <div className="ml-7">
-                      <p className="text-sm text-gray-600">
-                        {area.neighborhoods.join(' • ')}
-                      </p>
-                    </div>
+                  <div key={index} className="flex items-center gap-2">
+                    <svg
+                      className="w-5 h-5 text-red-600 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <h4 className="font-semibold">{area.city}</h4>
                   </div>
                 ))}
               </div>
