@@ -66,16 +66,40 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, ima
 
 const services = [
   {
-    title: 'Vitrificação de Farol',
-    description: 'Proteção duradoura que restaura a transparência e brilho dos faróis, melhorando a visibilidade noturna.',
+    title: 'Vitrificação de Faróis',
+    description: 'Restauração profissional que devolve a transparência e brilho original dos faróis, melhorando a visibilidade noturna.',
     icon: '💡',
     imageUrl: '/vitrificacao-farol.jpg'
   },
   {
     title: 'Vitrificação de Pintura',
-    description: 'Proteção cerâmica que proporciona brilho intenso e proteção duradoura para a pintura do seu veículo.',
-    icon: '✨',
+    description: 'Proteção cerâmica profissional que proporciona brilho intenso e proteção duradoura para a pintura do seu veículo.',
+    icon: '🚗',
     imageUrl: '/vitrificacao-pintura.jpg'
+  },
+  {
+    title: 'Higienização Interna',
+    description: 'Limpeza profunda e sanitização completa do interior do veículo, incluindo bancos, teto, carpetes e painéis.',
+    icon: '🧹',
+    imageUrl: '/higienizacao-interna.jpg'
+  },
+  {
+    title: 'Polimento Técnico',
+    description: 'Remoção de riscos e marcas, devolvendo o brilho original da pintura com técnicas profissionais.',
+    icon: '✨',
+    imageUrl: '/polimento.jpg'
+  },
+  {
+    title: 'Revitalização de Motor',
+    description: 'Limpeza e proteção profissional do motor, removendo sujeiras e aplicando proteção contra oxidação.',
+    icon: '🔧',
+    imageUrl: '/revitalizacao-motor.jpg'
+  },
+  {
+    title: 'Lavagem de Estofados',
+    description: 'Limpeza especializada de sofás e colchões, removendo manchas e higienizando profundamente.',
+    icon: '🛋️',
+    imageUrl: '/lavagem-estofados.jpg'
   }
 ]
 
@@ -93,7 +117,7 @@ export default function ServicesSection(): JSX.Element {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

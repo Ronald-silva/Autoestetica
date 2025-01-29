@@ -23,8 +23,12 @@ const initialFormData: FormData = {
 }
 
 const services = [
-  { value: 'vitrificacao-farol', label: 'Vitrificação de Farol' },
-  { value: 'vitrificacao-pintura', label: 'Vitrificação de Pintura' }
+  { value: 'vitrificacao-farol', label: 'Vitrificação de Faróis' },
+  { value: 'vitrificacao-pintura', label: 'Vitrificação de Pintura' },
+  { value: 'higienizacao-interna', label: 'Higienização Interna' },
+  { value: 'polimento-tecnico', label: 'Polimento Técnico' },
+  { value: 'revitalizacao-motor', label: 'Revitalização de Motor' },
+  { value: 'lavagem-estofados', label: 'Lavagem de Estofados' }
 ]
 
 export default function BookingSection(): JSX.Element {
