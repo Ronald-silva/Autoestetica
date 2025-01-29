@@ -58,7 +58,6 @@ export default function Footer(): JSX.Element {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>WhatsApp:</span>
                   <span>(85) 9.9609-2045</span>
                 </a>
               </li>
